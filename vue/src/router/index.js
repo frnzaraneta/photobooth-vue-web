@@ -5,6 +5,7 @@ import About from '../views/About.vue';
 import Navbar from '../components/Navbar.vue';
 import AppLayout from "../components/AppLayout.vue";
 
+
 const routes =[
     {
         path: '/',

@@ -1,9 +1,9 @@
 <template>
     <nav class=" relative z-20">
   
-  <div  class=" bg-gray-800 text-white p-4 md:flex md:items-center justify-between md:px-48">
-    <div class="logo text-2xl font-bold text-white cursor-pointer">
-      <h1>Photobooth</h1>
+  <div  class=" bg-gray-800 text-white p-4 md:flex md:items-center justify-between md:px-48 ">
+    <div class=" md:text-2xl font-bold  text-white cursor-pointer ">
+      <h1 >Photobooth</h1>
     </div>
     <span class="text-white text-4xl absolute right-6 top-5 cursor-pointer md:hidden">
       <Bars3BottomRightIcon @click="toggleMenu" v-if="!isOpen" class="block h-6 w-6" visible-="false" />
