@@ -1,5 +1,5 @@
 <template>
-    <nav class=" relative z-20">
+    <nav class="flex-wrap relative z-20 ">
   
   <div  class=" bg-gray-800 text-white p-4 md:flex md:items-center justify-between md:px-48 ">
     <div class=" md:text-2xl font-bold  text-white cursor-pointer ">
@@ -13,9 +13,10 @@
     <ul class="md:flex gap-5 items-center absolute md:static bg-gray-800 w-full md:w-auto pb-10 md:pb-0 px-6 md:px-0 top-14"
     :class="[isOpen ? 'left-0' : 'left-[-100%]' ]">
       <li v-for="menuResult in menuResult" class="py-4 md:my-0 ">
-          <a href="/home">{{ menuResult.Home }}</a>
-          <a href="/project">{{ menuResult.Project }}</a>
-          <a href="/about">{{ menuResult.About }}</a>
+          <a href="#home" v-smooth-scroll>{{ menuResult.Home }}</a>
+          <a href="#project" v-smooth-scroll>{{ menuResult.Project }}</a>
+          <a href="#about" v-smooth-scroll>{{ menuResult.About }}</a>
+       
       </li>
     </ul>
   </div>
@@ -36,6 +37,7 @@
     isOpen.value = !isOpen.value;
   }
   
+  //MenuChoices
   const menuResult =[
     {Home: 'Home'},
     {Project: 'Project'},

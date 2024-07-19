@@ -22,7 +22,7 @@ const routes =[
                 }
             },
             {
-                path: '/project', name: 'Project', components:{
+                path: 'project', name: 'Project', components:{
                     default: Navbar,
                     homeRouter: HomeHeader,
                     projectRouter: Project,
